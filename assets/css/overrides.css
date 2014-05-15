@@ -1,0 +1,281 @@
+/* Overrides for Alexander Consulting */
+
+.header {
+    padding: 25px 0 25px;
+    background-color: #222222;
+}
+.main-text{
+    padding: 40px 0 0;
+}
+img.effing-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align:middle;
+}
+
+.effing-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align:middle;
+}
+
+h2 {
+    margin: 20px 0 0;
+    color: #000000;
+    text-align: left;
+}
+
+.tab-row{
+    background-color: #eeeeee;
+}
+
+.dark-border-bottom{
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.body-row{
+    background-color: #ffffff;
+}
+
+#centeredmenu {
+    float:left;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+#centeredmenu dl {
+    clear:left;
+    float:left;
+    list-style:none;
+    position:relative;
+    left:50%;
+    text-align:center;
+}
+#centeredmenu dl dd {
+    display:block;
+    float:left;
+    list-style:none;
+    position:relative;
+    right:50%;
+}
+#centeredmenu dl dd a {
+    display:block;
+}
+
+.image-wrap img {
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.body-text{
+    text-align: left;
+    color:#222222;
+    font-size: 17px;
+    line-height: 26px;
+    padding:20px 0 20px;
+}
+
+.about-text{
+    text-align: left;
+    color:#222222;
+    font-size: 16px;
+    line-height: 24px;
+    padding:20px 0 20px;
+}
+
+.orbit-styles {
+    padding: 15px 0 15px;
+}
+
+td[rowspan] {
+    vertical-align: top;
+}
+
+.home-image {
+    display: inline-block;
+}
+
+.orbit-timer {
+    left: -10000px;
+    top: auto;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+.morphing-glowing {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 0.5s;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.morphing-glowing:hover{
+    -webkit-box-shadow: 0 0 30px rgba(226,178,39,.7), inset 0 0 30px rgba(226,178,39,1);
+    -moz-box-shadow: 0 0 30px rgba(226,178,39,.7), inset 0 0 30px rgba(226,178,39,1);
+    box-shadow: 0 0 30px rgba(226,178,39,.7), inset 0 0 30px rgba(226,178,39,1);
+
+    -webkit-border-radius: 60em;
+    -moz-border-radius: 60em;
+    border-radius: 60em;
+}
+
+#main-callout {
+    background-color: #222222;
+    color: #E2B227;
+    font-style:italic;
+    font-size:22px;
+    padding: 20px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.discover-callout {
+    font-size:16px;
+    margin: 10px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #222222;
+
+}
+
+.services-callout {
+    font-size:16px;
+    margin: 10px 0 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #222222;
+
+}
+
+#services-banner {
+    display:table;
+    margin: 0 auto;
+}
+
+#globe-banner {
+    margin:0 auto;
+    display:table;
+}
+
+.footer {
+    padding: 0;
+    background-color: #222222;
+}
+
+.tabs-content {
+    margin-bottom: 0px!important;
+}
+
+#headshot-image {
+    float:right;
+    width: 300px;
+    margin: 20px 0 0;
+    padding: 0 0 0 20px;
+}
+
+#process-image {
+    float:right;
+    width: 750px;
+    padding: 0 0 0 20px;
+    margin: 20px 0 0;
+}
+
+.sub-nav-enlarge {
+    padding-top: 0.75rem;
+    padding-right: 2.25rem;
+    padding-bottom: 0.76rem;
+    padding-left: 2.25rem;
+    font-size: 14px;
+}
+
+.secondary-nav-labels {
+    padding: 0.5rem 1.75rem 0.51rem 1.75rem!important;
+    font-size:1rem!important;
+    margin:0 auto;
+}
+
+#services {
+    padding: 0;
+}
+
+.vertical-divide {
+    border-left: #dfdfdf 1px solid;
+}
+
+.no-pad {
+    padding:0!important;
+}
+
+.services-bullet-text{
+    text-align: left;
+    color:#222222;
+    font-size: 14px;
+    line-height: 24px;
+    padding:20px 0 20px;
+}
+.assignments-bullet-text{
+     text-align: left;
+     color:#222222;
+     font-size: 12px;
+     line-height: 22px;
+     padding:20px 0 20px;
+ }
+
+@font-face {
+    font-family: 'fontawesome-webfontregular';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/fontawesome-webfont.woff') format("woff"), url('../fonts/fontawesome-webfont.ttf') format("truetype"), url('../fonts/fontawesome-webfont.svg#fontawesome-webfontregular') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Optima';
+    src: url('../fonts/optima-regular-webfont.eot');
+    src: url('../fonts/optima-regular-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/optima-regular-webfont.woff') format("woff"), url('../fonts/optima-regular-webfont.ttf') format("truetype"), url('../fonts/optima-regular-webfont.svg#optima-regular-webfontregular') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontawesome-webfont {
+    font-size: 28px;
+    font-family: fontawesome-webfontregular;
+    color: #666;
+    margin: 0;
+    text-align: center;
+    line-height: .9;
+}
+
+.icon-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align:middle;
+    color: #222222;
+    padding: 30px 30px 50px;
+}
+
+.icon-color {
+    color: #222222;
+}
+
+.icon-color:hover {
+    color:#E2B227;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
