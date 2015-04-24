@@ -1,0 +1,27 @@
+.DS_Store
+results.html
+pkg
+html
+
+*.lock
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+out
+.idea/
+.idea/*
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
