@@ -1014,3 +1014,18 @@ footer .social-links li:first-child { margin-left: 0; }
     color: #ffffff;
 }
 
+#member-button {
+    margin-top: 20px;
+}
+
+.dark-background {
+    color: #fdfdfd
+}
+
+.dark-background {
+    color: #fdfdfd!important;
+}
+
+h1.dark-background {
+    color: #ffffff;
+}
