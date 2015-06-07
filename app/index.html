@@ -18,10 +18,10 @@
 	<!-- CSS
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
-
+   <link href="css/foundation-custom.css" rel="stylesheet" type="text/css"/>
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
@@ -36,46 +36,113 @@
 
    <!-- Header
    ================================================== -->
-   <header id="home">
 
-      <nav id="nav-wrap">
+<div class="hero">
+   <nav id="nav-wrap">
 
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+       <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+       <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#aboutfencing">Cornell Fencing</a></li>
-            <li><a class="smoothscroll" href="#about">About CFA</a></li>
-            <li><a class="smoothscroll" href="#membership">Membership</a></li>
-            <li><a class="smoothscroll" href="#whatWeDo">What we do</a></li>
-            <li><a class="smoothscroll" href="#board">Board of Directors</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
+       <ul id="nav" class="nav">
+           <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+           <li><a class="smoothscroll" href="#aboutfencing">History & Team</a></li>
+           <li><a class="smoothscroll" href="#news">News & Events</a></li>
+           <li><a class="smoothscroll" href="#media">Media</a></li>
+           <li><a class="smoothscroll" href="#membership">Membership</a></li>
+           <li><a class="smoothscroll" href="#donate">Donate</a></li>
+           <li><a class="smoothscroll" href="#contact">Contact</a></li>
+       </ul> <!-- end #nav -->
 
-      </nav> <!-- end #nav-wrap -->
+   </nav> <!-- end #nav-wrap -->
 
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Cornell Fencing Association</h1>
-         </div>
-      </div>
+   <div class="page-headline">
+       <h1 class="responsive-headline">Cornell Fencing Association</h1>
+   </div>
 
-   </header> <!-- Header End -->
+   <div class="orbit-styles" id="home">
+       <ul data-orbit
+           data-options="animation:slide;
+              timer_speed: 5000;
+              pause_on_hover:false;
+              animation_speed:250;
+              resume_on_mouseout:true;
+              navigation_arrows:true;
+              bullets:false;
+              slide_number:false;
+              timer_show_progress_bar:false;">
+           <li>
+               <header id="team-2015">
+               </header>
+           </li>
+           <li>
+               <header id="team-2011">
+               </header>
+           </li>
+       </ul>
+   </div>
+</div>
+    <!-- Header End -->
 
    <!-- About CFA Section
    ================================================== -->
    <section id="aboutfencing" style="padding: 90px 0 72px; background: #fff;">
        <div class="row add-bottom">
-           <div class="twelve columns">
-               <h1>About Cornell Fencing</h1>
-                <p>The Cornell Fencing program includes both a women’s varsity team and a men’s club team.</p>
+           <div class="row" style="margin-bottom: 15px;">
+               <img src="http://www.cornellfencing.com/sites/default/files/nitobe_logo.png" style="vertical-align:middle; padding-left: 30px;">
+               <span id="about-header">&nbsp;&nbsp;Team History</span>
+           </div>
+           <div class="three columns" style="padding-left: 0;">
+               <div class="dark-border-bottom">
+                   <div class="body-wrapper">
+                       <dl class="tabs vertical" data-tab>
+                           <dd class="active vert-nav"><a class="secondary-nav-labels" href="#cfh">&#8226; &nbsp;Cornell Fencing History</a></dd>
+                           <dd class="vert-nav"><a class="secondary-nav-labels" href="#cfah">&#8226;  &nbsp;History of the CFA</a></dd>
+                           <dd class="vert-nav"><a class="secondary-nav-labels" href="#unbundled">&#8226;  &nbsp;Men's Team History</a></dd>
+                           <dd class="vert-nav"><a class="secondary-nav-labels" href="#fees">&#8226;  &nbsp;Women's Team History</a></dd>
+                       </dl>
+                   </div>
+               </div>
+           </div>
+           <div class="nine columns">
+               <div class="tabs-content">
+                   <div class="content no-pad active" id="cfh">
+                       <h3>History of Cornell Fencing</h3>
+                       <p>
+                           Since 1894, Cornell students who love the sport of fencing have met on campus. What started as a small club, grew into a powerhouse in the first half of the 20th Century that’s evolved into one of the finest programs in the country.
+                           <br><br>
+                           Fencing officially became a varsity sport at Cornell in 1898, and the University fielded a men’s team every year through 1992-93, except for a six-year hiatus from 1917-23. A women’s fencing club was established in 1926 and Cornell was almost immediately competitive in intercollegiate meets. In 1929, the first Intercollegiate Women’s Fencing Association championship tournament was held at Cornell, and by 1930, the Big Red had claimed the national crown.
+                       </p>
+                   </div>
+                   <div class="content no-pad" id="cfah">
+                       <h3>Cornell Fencing Association History</h3>
+                       <p class="assignments-bullet-text">
+                           The Cornell Fencing Association was founded on April 2, 2015 by a group of Cornell fencers and alumni, in partnership with the Athletic Department, Coaching Staff,  and the Athletic Alumni Affairs Department. The CFA was established to encourage, promote, and support the fencing program at Cornell University. We look to assist Cornell University in creating an environment to enhance student athletes’ lives, in accordance with the mission and goals of Cornell, the Athletic Department, and the NCAA through networking, financial support, mentorship, and other means.
+                       </p>
+                   </div>
+                   <div class="content no-pad" id="unbundled">
+                       <h3>Men’s Team History</h3>
+                       <p class="services-bullet-text">
+                           The men’s team became a national power in the 1930s when Georges Cointe became head coach. Cointe turned out successful teams during his entire reign as Cornell coach, and his 1955 team was IFA epee and three-weapon champion. Richard Pew ‘55 was the national runner-up in 1955 and he placed fourth in the 1956 Olympics.
+                           <br><br>
+                           Raoul Sudre ’60 continued the rich tradition of Big Red fencing when he served as coach from 1961-1976. Sudre was named Coach of the Year three times by both the NCAA and NIWFA and in 1975 led the men to a second-place finish at the national championships.
+                           <br><br>
+                           In the mid-1970s, Cornell experienced success within the Ivy League that it had not achieved before and has not matched since. Cornell tied for first in the Ivy League in 1974, 1975 and 1977, compiling the second best record at the Ivy League Championships between ‘74 and ‘77 (one victory behind UPenn’s 14-6 record).
+                           <br><br>
+                           In 1993, the Men lost their varsity status and continued competing as a club in the Middle Atlantic Collegiate Fencing Association (MACFA) and in the United States Association of Collegiate Fencing Clubs (USACFC). Since 1993, Cornell has won the USACFC Foil title 3 times, the MACFA foil title 4 times, and the USACFC National Title Once.
+                       </p>
+                   </div>
+                   <div class="content no-pad" id="fees">
+                       <h3>Women’s Team History</h3>
+                       <p class="services-bullet-text">
+                           The women enjoyed national titles from 1967-69 under the direction of Michel Sebastiani and in 1972 and 1973 under Sudre. Karen Denton ‘68 took the IWFA individual title as a senior, while Peggy Walbridge ‘74 was a three-time All-American who won the national title in her final season.
+                           <br><br>
+                           Jean-Jacques Gillet, assistant coach since 1970, became head coach in 1977. The women’s squad went 13-0 and placed second in the NIWFA tournament in 1977, finished fourth at the AIAW championships in 1982 and placed seventh at the NCAA championships in 1983.
+                           <br><br>
+                           Cornell once more returned to the top of the fencing world when it won back-to-back NIWFA championships in 1991 and 1992.
 
-                <p>The Cornell Women's Varsity Team is ranked 9th in the nation with an overall record of 16-8 to round out a successful 2014-2015 season! The team placed 5th at the Ivy League Championships, with one fencer receiving All-Ivy Honors. After qualifying ten fencers to compete at NCAA Regionals, three went on to represent the Cornell at the 2015 NCAA Fencing Championship held in Columbus, Ohio. The trio's combined efforts led the Big Red to a 17th place finish across 25 universities, as well as All-American honors.The women's team values success both in the salle and throughout the Ithaca community. In addition to their focus on competitive development, the team enjoys giving back to the community through service initiatives, support of other teams at athletic events, and involvement in a wide variety of organizations across campus. .</p>
-
-                <p>The Cornell Men’s Fencing Club is ranked as the 2nd best club team in the United States after two consecutive years defending that title at the United States Association of Fencing Clubs Championships. The Men’s team finished in third place at the 2015 Mid Atlantic Collegiate Fencing Association Championships, ranking as the top club team in the conference and beating out varsity programs such as Lafayette, NJIT, Hunter College, Yeshiva University and Haverford College.</p>
-
-                <p>The Cornell Fencing Association (CFA), made up of alumni, friends, and family, is an organization with the goal of supporting the fencing program at Cornell through financial assistance, networking opportunities, mentorship, and other means. For more information, please click on the About CFA tab.</p>
+                       </p>
+                   </div>
+               </div>
            </div>
        </div>
    </section>
@@ -83,46 +150,82 @@
 
    <!-- About CFA Section
    ================================================== -->
-   <section id="about" style="padding: 90px 0 72px; background: #191919;">
+   <section id="news" style="padding: 90px 0 72px; background: #efefef;">
        <div class="row add-bottom">
            <div class="twelve columns">
-               <h1 class="dark-background">About the CFA</h1>
-                <p class="dark-background">The Cornell Fencing Association is made up of alumni, friends, and family of Cornell Fencing. The CFA was established to encourage, promote, and support the fencing program at Cornell University. The CFA assists Cornell University in creating an environment to enhance student athletes’ lives, in accordance with the mission and goals of Cornell, the Athletic Department, and the NCAA through networking, financial support, mentorship, and other means.</p>
+               <h2 class="title-margin-bottom">News & Events</h2>
+               <div class="eight columns">
+                   <div class="row" style="margin-bottom: 15px;">
+                       <i class="fa fa-lightbulb-o fa-3x" style="padding-left: 20px;"></i>
+                       <span class="inline-header">&nbsp;&nbsp;Spotlight on Fencers</span>
+                   </div>
 
-                <p class="dark-background">CFA was founded on April 2, 2015 by a group of Cornell fencers and alumni, including Christine McIntosh, Beverly Yang, Valerie Derose, Jake Silverman, Matthew Laks, Michael Fotinatos, Matt Herndon, Bryan Mills, and James McCormick, with the help of Coach Iryna Dolgikh, Professor Alexander Colvin as Fencing Advisor, the Athletic Department, and the Athletic Alumni Affairs Department.</p>
+
+                   <h4>Matt Herndon retires at age 16</h4>
+                   <p>
+                       Here's a bunch of story text.  I can't write about Matt without putting in some level of thought
+                       about the content, but that's not the point of this exercise.  This area should be full of good,
+                       hearty text that will win hearts.  Here's a picture of Herndon winning something while dressed
+                       in fencing stuff:
+                   </p>
+                   <img width="300" src="images/herndon.jpg">
+               </div>
+
+               <div class="four columns">
+                   <div class="row" style="margin-bottom: 15px;">
+                       <i class="fa fa-calendar fa-3x" style="padding-left: 20px;"></i>
+                       <span class="inline-header">&nbsp;&nbsp;Events & Updates</span>
+                   </div>
+                   <h5>Arts and Crafts Session #1</h5>
+                   <p>
+                       Fun with glitter and pipe cleaners!  Age verification required.<br>
+                       <i style="font-size: 12px;">111 Dewitt, Pl, Ithaca, NY 14853 :: 2/25/15, 8PM</i>
+                   </p>
+
+                   <h5>Slope Day sing-along w/ Matt Joe</h5>
+                   <p>
+                       Stop by Libe Slope to cover the soothing tunes of B.O.B, Katy Perry, and much more!<br>
+                       <i style="font-size: 12px;">Libe Slope, Cornell University :: 5/24/15, 12PM</i>
+                   </p>
+
+                   <h5>New event header goes here!</h5>
+                   <p>
+                       New event text goes here!
+                   </p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Media Section
+   ================================================== -->
+   <section id="media" style="padding: 90px 0 72px; background: #fff;">
+       <div class="row add-bottom">
+           <div class="twelve columns">
+               <h2 class="dark-background">Media</h2>
+               The CFA has several committees dedicated to ensure the purpose and goals of the association are carried out:
+               <ul class="disc dark-background">
+                   <li>Committee Chairmanship and Membership</li>
+                   <li>Nominating Committee</li>
+                   <li>Public Relations Committee</li>
+                   <li>Mentorship Committee</li>
+                   <li>Major Gifts Committee</li>
+                   <li>Any other special committee may be formed to serve the CFA</li>
+               </ul>
            </div>
        </div>
    </section>
 
    <!-- Membership Section
    ================================================== -->
-   <section id="membership" style="padding: 90px 0 72px; background: #fff;">
+   <section id="membership" style="padding: 90px 0 72px; background: #efefef;">
        <div class="row add-bottom">
            <div class="twelve columns">
-               <h1>Membership</h1>
+               <h2>Membership</h2>
                <h3>Become a Member:</h3>
                <p>Membership is open to any friends, family, or alumni of the fencing program. Supporters of Cornell Fencing can be a member for free by signing up <a href='https://docs.google.com/forms/d/1VDoX6U44YPvR9snDnxsYTrbYKzNgDiyJuRbIqv82K14/viewform'>here</a>.</p>
                <h3>Active Members:</h3>
                <p>Individuals who have contributed to Cornell Fencing or the Cornell Fencing Association during the Cornell Fiscal year in which their contribution is received are active members. The Cornell fiscal year extends from July 1 to June 30.  Active members are able to vote in elections for CFA Board members. You must also be an active member to be eligible for a Board position.</p>
-           </div>
-       </div>
-   </section>
-
-   <!-- What we do Section
-   ================================================== -->
-   <section id="whatWeDo" style="padding: 90px 0 72px; background: #191919;">
-       <div class="row add-bottom">
-           <div class="twelve columns">
-               <h1 class="dark-background">What we do (committees and events)</h1>
-               The CFA has several committees dedicated to ensure the purpose and goals of the association are carried out:
-               <ul class="disc dark-background">
-                <li>Committee Chairmanship and Membership</li>
-                <li>Nominating Committee</li>
-                <li>Public Relations Committee</li>
-                <li>Mentorship Committee</li>
-                <li>Major Gifts Committee</li>
-                <li>Any other special committee may be formed to serve the CFA</li>
-              </ul>
            </div>
        </div>
    </section>
@@ -132,7 +235,7 @@
    <section id="board" style="padding: 90px 0 72px; background: #fff;">
        <div class="row add-bottom">
            <div class="twelve columns">
-               <h1>Board of Directors</h1>
+               <h2>Board of Directors</h2>
                <dl class="lining" style="font-weight: bold">
                 <dt>Inaugural President</dt>
                 <dd>Valerie Derose Leimer</dd>
@@ -207,8 +310,15 @@
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
-   <script src="js/doubletaptogo.js"></script>
-   <script src="js/spin.js"></script>
+
+   <script src="js/modernizr.js"></script>
+   <script src="js/foundation.min.js"></script>
+   <script src="js/foundation.orbit.js"></script>
+   <script src="js/foundation.reveal.js"></script>
+
+   <script>
+       $(document).foundation();
+   </script>
 
    <script src="js/init.js"></script>
 
