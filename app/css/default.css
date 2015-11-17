@@ -802,6 +802,18 @@ properly.
 	text-align: center !important;
 }
 
+.social-media-icons {
+   width: 40px;
+   height: 40px;
+   float: left;
+   margin-right: 15px;
+}
+
+.social-media-table-cell {
+   vertical-align:middle;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
 
 
 
