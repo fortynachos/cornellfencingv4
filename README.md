@@ -68,7 +68,7 @@ tar -zcvf app.tar.gz app
 
 Then go ahead and log into cPanel.  Once you've logged in, go to the "File Manager" and choose the web root option. Then go to the cornellfencingassociation directory, upload your zipped file, right click it, and click extract.  You may want to rename the existing app directory to something else unless you're sure that the version you're uploading is stable.
 
-Rename the extracted folder to ```app```, **and then copy the .htaccess file from the /public_html/cornellfencingassociation directory into your new app folder.  If you don't do this, your page will get a 500, and everything will be sad.
+Rename the extracted folder to ```app```, **and then copy the .htaccess file from the /public_html/cornellfencingassociation directory into your new app folder**.  If you don't do this, your page will get a 500, and everything will be sad.
 
 Once you do this, you're done!
 
