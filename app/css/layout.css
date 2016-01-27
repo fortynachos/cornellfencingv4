@@ -23,11 +23,13 @@
 /* ------------------------------------------------------------------ */
 
 #team-2015 {
-    background: #161415 url(../images/2015_team_cropped.jpg) no-repeat top center;
+    background: #161415 url(/images/2015_team_cropped.jpg) no-repeat top center;
+    height: 100% auto;
 }
 
 #team-2011 {
-    background: #161415 url(../images/old_team.jpg) no-repeat top center;
+    background: #161415 url(/images/old_team.jpg) no-repeat top center;
+    height: 100% auto;
 }
 
 /* ------------------------------------------------------------------ */
