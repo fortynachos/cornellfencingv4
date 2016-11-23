@@ -5,7 +5,7 @@ This site is the fourth reincarnation of the cornell fencing website, this time 
 
 Stylesheets were shamelessly scraped from http://www.styleshout.com/
 
-![Cornell Fencing](https://camperregsecure.com/cornellcampslogin/css/cornell-logo.png "Cornell Fencing")
+![go big red](http://i.imgur.com/9HjTMC5.png)
 
 ## Get the code
 Before you do anything:
@@ -30,7 +30,29 @@ git pull upstream master
 ^^ This should return a message saying your changes are up to date.
 
 ## Making edits
-The page is actually pretty straightforward.  
+The page is actually pretty straightforward.
+
+#### Seeing Your Changes
+We use Node.js to run a local dev server. [Install Node.js from the official website.](https://nodejs.org/en/) Get version 7.x.
+
+In the directory for this project:
+
+```
+# Install the dependencies
+npm install
+
+# Launch the server
+npm start
+
+# You'll see an output like:
+
+> cornellfencingv4@1.0.0 start /Users/nickheiner/Code/cornellfencingv4
+> static -a 0.0.0.0 -H '{"Cache-Control": "no-cache, must-revalidate"}' app
+
+serving "app" at http://0.0.0.0:8080
+```  
+
+Go to the URL listed in the output (`http://0.0.0.0:8080` in the example above) to see your page. Hit "refresh" when you make any changes to the files on disk.
 
 #### Making text edits
 Most, if not all text changes can be made in the ```app/index.html``` file.  Nothing complicated here, just find the relevant HTML tags and change away.
