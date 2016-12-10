@@ -25,3 +25,5 @@ out
 .yardoc
 _yardoc
 doc/
+
+/node_modules/
