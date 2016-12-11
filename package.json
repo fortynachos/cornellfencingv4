@@ -1,0 +1,22 @@
+{
+  "name": "cornellfencingv4",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Cornell Fencing Website v4",
+  "scripts": {
+    "start": "static -a 0.0.0.0 -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}' app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortynachos/cornellfencingv4.git"
+  },
+  "author": "Cornell Fencing <captain@cornellfencing.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fortynachos/cornellfencingv4/issues"
+  },
+  "homepage": "https://github.com/fortynachos/cornellfencingv4#readme",
+  "devDependencies": {
+    "node-static": "^0.7.9"
+  }
+}
