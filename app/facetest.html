@@ -191,10 +191,27 @@
                 <script id="myTemplate" type="text/template">
                     <div style="margin-bottom:15px;">
                             <h4>{created_time}</h4>
-                            {message}
+                            Message: {message}
+                            <br><br>Type: {type}
+                            <br><br>Description: {description}
+                            <br><br>Link: {link}
+                            <br><br>Picture: <img src='https://graph.facebook.com/{object_id}/picture?type=normal&access_token=222601031087438|fEa02JzC7jP_JuopFqXTtBdz1rM'>
+                            <br><br>ObjectID: {object_id}
+                            <br><br>PostID: {post_id}
+                            
                     </div>
                 </script>
-
+<!--                             
+sample 
+https://graph.facebook.com/384349501743727/feed?access_token=222601031087438|fEa02JzC7jP_JuopFqXTtBdz1rM
+https://graph.facebook.com/1411545932218404/picture?type=normal&access_token=222601031087438|fEa02JzC7jP_JuopFqXTtBdz1rM
+                            // http://graph.facebook.com/'+object.id+'/picture?type=normal'
+                            
+                            /* Steps
+                            1. Parse through JSON and only display top 5 responses that meet certain criteria (exe include work Cornell)
+                            2. If 
+-->
+               
             <div class="four columns">
                 <div class="row" style="margin-bottom: 15px;">
                    <i class="fa fa-calendar fa-3x" style="padding-left: 20px;"></i>
@@ -550,8 +567,11 @@
     //custom/recycled code:
     var myMethods={
         "created_time" : function(data){return String(data).split("T")[0]; }
+
+      //  "message" : function(data){return String(data).replace("Cornell","CornyLL"); }
     };
 
+    // https://graph.facebook.com/384349501743727/feed?access_token=222601031087438|fEa02JzC7jP_JuopFqXTtBdz1rM
     var $limit = 5;
     var $group_id = '384349501743727'; //CFA Facebook page group id
     var $facebookurl = "https://graph.facebook.com/"+$group_id+"/feed?access_token=222601031087438|fEa02JzC7jP_JuopFqXTtBdz1rM";
@@ -565,9 +585,13 @@
        buff=$d.slice(0, $limit).map(function(item, $counter){  return  template(item, temp, myMethods );  });
       el("udump").innerHTML=buff.join("\n");
     });
+// https://graph.facebook.com/1411545932218404/picture?type=large&access_token=222601031087438|fEa02JzC7jP_JuopFqXTtBdz1rM
+// pic_url = 'http://graph.facebook.com/'+ post_id +'?fields=full_picture&access_token="+ response.authResponse.accessToken;
+// http://graph.facebook.com/'+ post_id +'?fields=full_picture&access_token=222601031087438|fEa02JzC7jP_JuopFqXTtBdz1rM
 
 //  ? ></script>
 
 </body>
 
 </html>
+
