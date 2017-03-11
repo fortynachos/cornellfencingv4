@@ -17,6 +17,7 @@
 
 	<!-- CSS
     ================================================== -->
+   <link rel="stylesheet" href="css/custom.css">
    <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
@@ -38,6 +39,26 @@
 
         ga('create', 'UA-24758814-2', 'auto');
         ga('send', 'pageview');
+
+        window.addEventListener('load', function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                if (link.addEventListener) {
+                    link.addEventListener('click', function() {
+                        var target = this;
+                        ga('send', 'event', 'outbound', 'click', target.href, {
+                            'transport': 'beacon',
+                            'hitCallback': function() { 
+                                document.location = target.href; 
+                            }
+                        });
+                        return false;
+                    })
+                }
+            })
+
+        });
+
     </script>
 
 </head>
@@ -72,7 +93,7 @@
    <div class="orbit-styles" id="home">
        <ul data-orbit
            data-options="animation:slide;
-              timer_speed: 5000;
+              timer_speed: 10000;
               pause_on_hover:false;
               animation_speed:250;
               resume_on_mouseout:true;
@@ -98,13 +119,22 @@
    <section id="news" style="padding: 90px 0 72px; background: #efefef;">
        <div class="row add-bottom">
            <div class="twelve columns">
-               <h2 class="title-margin-bottom">News & Events</h2>
+               <h2 class="title-margin-bottom">News &amp; Events</h2>
                
                <div class="eight columns">
                    <div class="row" style="margin-bottom: 30px;">
                        <i class="fa fa-coffee fa-3x" style="padding-left: 20px;"></i>
                        <span class="inline-header">&nbsp;&nbsp;CFA News</span>
                    </div>
+
+                    <h4>Cornell Giving Day 2017</h4>
+                    <p>March 14th is <a href="https://givingday.cornell.edu/">Cornell Giving Day</a>, and the first athletic team to hit its gift count goal gets an extra $5,000 added to their budget. The amount of the gift does not matter at all -- this event is all about the participation trophies! :)</p>  
+
+                    <p>Other teams will also be fighting for the $5,000, so it's a race! Cornell Fencing's participation goal is 50 people. We need volunteers to be ready to click the "submit" button right at midnight east coast time on March 14th. By doing this, we'll also be in the running for the first gift of the day, which is an extra $2,500. It'll be like racing to get your courses for the next semester before PeopleSoft crashes as soon as course enroll opens, but with this our team could win $7,500 instead of your second-choice section for Wines.</p>
+
+                    <p>Additionally, an anonymous donor will donate an extra $10,000 to Cornell Fencing if there are 20 people who donate on Giving Day who have never donated to Cornell Fencing before! If you've never given to Cornell Fencing, there's no better time to start.</p>
+
+                    <p class="cta"><a class="button" href="https://goo.gl/forms/SNrGtJWjfLCwxIWk2">Are you in? Sign up now.</a></p>
 
                    <h4>2016 Brandeis Invitational</h4>
                    <img style="max-width: 600px" src="images/20161204_Brandeis.jpg">
