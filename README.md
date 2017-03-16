@@ -97,4 +97,4 @@ After that's done, you're ready to deploy:
 npm run deploy
 ```
 
-This will push the contents of the `app` directory to Github pages. It will take a few minutes for the updated site to be live.
+This will push the contents of the `app` directory to Github pages. It will take a few minutes for the updated site to be live. GH Pages caches, so you may need to clear your browser cache before you see the updates.
