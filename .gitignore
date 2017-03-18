@@ -3,7 +3,6 @@ results.html
 pkg
 html
 
-*.lock
 *.gem
 *.rbc
 .bundle
@@ -27,3 +26,4 @@ _yardoc
 doc/
 
 /node_modules/
+*.log
