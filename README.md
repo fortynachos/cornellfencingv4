@@ -7,6 +7,8 @@ Stylesheets were shamelessly scraped from http://www.styleshout.com/
 ![go big red](http://i.imgur.com/9HjTMC5.png)
 
 ## Get the code
+**Note: Because this is a org-level Github Pages repo, we use the `master` for deployment, _not_ development. Development is done on the `dev` branch.**
+
 Before you do anything:
 
 #### Fork!
@@ -15,13 +17,13 @@ On this page, click the "fork" button in the upper-right-hand corner of the page
 #### Clone!
 ```
 git clone (url_of_your_forked_repo)
-cd cornellfencingv4
+cd cornellfencing.github.io
 git remote rename origin my-fork
 ```
 
 #### Add an upstream remote!
 ```
-git remote add origin https://github.com/fortynachos/cornellfencingv4
+git remote add origin https://github.com/cornellfencing/cornellfencing.github.io
 ```
 
 #### Confirm!
@@ -74,21 +76,21 @@ git commit -m "Your commit message"
 git push my-fork your_branch
 ```
 
-Once you've done that, make a pull request to the fortynachos/cornellfencingv4 repo for review.
+Once you've done that, make a pull request to the cornellfencing/cornellfencing.github.io repo for review.
 
 ## Deploying
-First, ensure that the git remote `origin` refers to the fortynachos/cornellfencingv4 repo:
+First, ensure that the git remote `origin` refers to the cornellfencing/cornellfencing.github.io repo:
 
 ```
 $ git remote -v | grep origin
-origin	git@github.com:fortynachos/cornellfencingv4.git (fetch)
-origin	git@github.com:fortynachos/cornellfencingv4.git (push)
+origin	git@github.com:cornellfencing/cornellfencing.github.io.git (fetch)
+origin	git@github.com:cornellfencing/cornellfencing.github.io.git (push)
 ```
 
 If that didn't look right, use:
 
 ```
-$ git remote set-url origin git@github.com:fortynachos/cornellfencingv4.git
+$ git remote set-url origin git@github.com:cornellfencing/cornellfencing.github.io.git
 ```
 
 After that's done, you're ready to deploy:
