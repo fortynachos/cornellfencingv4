@@ -5,7 +5,7 @@
   "description": "Cornell Fencing Website v4",
   "scripts": {
     "start": "static -a 0.0.0.0 -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}' app",
-    "deploy": "gh-pages -d app"
+    "deploy": "gh-pages -d app --branch master"
   },
   "repository": {
     "type": "git",
