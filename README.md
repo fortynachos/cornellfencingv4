@@ -28,7 +28,7 @@ git remote add origin https://github.com/cornellfencing/cornellfencing.github.io
 
 #### Confirm!
 ```
-git pull origin master
+git pull origin dev
 ```
 ^^ This should return a message saying your changes are up to date.
 
@@ -70,13 +70,20 @@ Dump all new image assets in the `app/images` directory and source them in index
 This page uses a lot of out-of-the-box js libraries that I didn't really make any effort to change.  Nearly of the javascript-based behavior of the page is powered by [Foundation Zurb](https://foundation.zurb.com), and secondarily supported by jquery.  If you're looking to change the JS on your own, no groundwork has really been laid out for you, so please follow general best practices and try not to make a mess.
 
 ## Commit / Push
+First check your commits with diff and status
 ```
-git pull origin master
-git commit -m "Your commit message"
-git push my-fork your_branch
+git diff
+git status
+```
+^^ Diff will return all of the individual lines you have changed. Status should return the files you have modified, added or deleted. If you added or deleted a file in the directory make sure to use git add <file> or git rm <file> so git will add or delete them properly. Once that is done you can commit and push. If you do not want to commit all the changes you made list them by name with git commit -m instead of git commit -am.
+
+```
+git pull origin dev
+git commit -am "Your commit message"
+git push my-fork dev
 ```
 
-Once you've done that, make a pull request to the cornellfencing/cornellfencing.github.io repo for review.
+Once you've done that, click "New pull request" on the github.com website for your fork to make a pull request to the cornellfencing/cornellfencing.github.io repo for review.
 
 ## Deploying
 First, ensure that the git remote `origin` refers to the cornellfencing/cornellfencing.github.io repo:
