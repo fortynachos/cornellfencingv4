@@ -819,5 +819,7 @@ properly.
    padding-bottom: 10px;
 }
 
-
+.news-img {
+    max-width: 600px;
+}
 
