@@ -6,6 +6,14 @@ Stylesheets were shamelessly scraped from http://www.styleshout.com/
 
 ![go big red](http://i.imgur.com/9HjTMC5.png)
 
+## Get the code!
+```
+# Download code from github
+git clone https://github.com/cornellfencing/cornellfencing.github.io
+# Go to the new project directory
+cd cornellfencing.github.io/
+```
+
 ## Editing
 ### Seeing Your Changes
 We use Node.js to run a local dev server. [Install Node.js from the official website.](https://nodejs.org/en/) Get the LTS version.
@@ -13,7 +21,7 @@ We use Node.js to run a local dev server. [Install Node.js from the official web
 In the directory for this project:
 
 ```
-# Install the dependencies
+# Install the dependencies (only need to do this the first time you run)
 npm install
 
 # Launch the server
@@ -27,13 +35,19 @@ npm start
 serving "app" at http://0.0.0.0:8080
 ```  
 
-Go to the URL listed in the output (`http://0.0.0.0:8080` in the example above) to see your page. Hit "refresh" when you make any changes to the files on disk.
+# If npm start returns an error it is likely due to an older version of npm, try running:
+```
+# (Update) the dependencies
+npm update
+```
+
+Once npm is successfully running use a web browser to go to the URL listed in the output (`http://0.0.0.0:8080` in the example above) to see your page. Hit "refresh" whenever you make any changes to the files on disk.
 
 ### Styling Changes
 All CSS overrides beyond the defaults should be made in `app/css/layouts.css`.  The other CSS files shouldn't need to be touched unless you very explicitly know what you're doing.
 
 ### Adding Images
-Dump all new image assets in the `app/images` directory and source them in index.html.  For something like adding images to the scrolling hero image, add the image URL in the format in `app/css/layouts.css` (under `0. Alumni Hero Banner Images`), and then add the relevant id to the index.html file.  Search "team-2015" if you're looking for an example in that file.  
+Dump all new image assets in the `app/images` directory and source them in index.html.  For something like adding images to the scrolling hero image, add the image URL in the format in `app/css/layouts.css` (under `0. Alumni Hero Banner Images`), and then add the relevant id to the index.html file.  Search "team-2015" if you're looking for an example in that file. For splash images try and match the pixel sizes of the ones already being used and crop the images or add a black bar to their tops so that the links at the top are visible.
 
 ### JS changes
 This page uses a lot of out-of-the-box js libraries that I didn't really make any effort to change.  Nearly of the javascript-based behavior of the page is powered by [Foundation Zurb](https://foundation.zurb.com), and secondarily supported by jquery.  If you're looking to change the JS on your own, no groundwork has really been laid out for you, so please follow general best practices and try not to make a mess.
@@ -45,9 +59,18 @@ git diff
 git status
 ```
 
+Next, if you have any new untracked files use git add to add them, for example:
+```
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app/images/MyNewImage.jpg
+    git add app/images/MyNewImage.jpg 
+```
+
 Then, submit your changes for review:
 ```
-git branch your-name/feature-name
+git checkout -b your-name/feature-name
 git commit -am "Your commit message"
 git push -u origin your-name/feature-name
 ```
