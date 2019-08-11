@@ -22,6 +22,15 @@
 /* 0. Alumni Hero Banner Images
 /* ------------------------------------------------------------------ */
 
+#cfa-team-salle-2019 {
+    background: #161415 url(../images/201905_CFA_Team_crop.jpg) no-repeat top center;
+    height: 100% auto;
+}
+#team-2019 {
+    background: #161415 url(../images/201905_Team_Crop.jpg) no-repeat top center;
+    height: 100% auto;
+}
+
 #team-2016 {
     background: #161415 url(../images/201609_Team_crop.jpg) no-repeat top center;
     height: 100% auto;
