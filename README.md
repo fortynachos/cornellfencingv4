@@ -6,40 +6,22 @@ Stylesheets were shamelessly scraped from http://www.styleshout.com/
 
 ![go big red](http://i.imgur.com/9HjTMC5.png)
 
-## Get the code
-Before you do anything:
-
-#### Fork!
-On this page, click the "fork" button in the upper-right-hand corner of the page.
-
-#### Clone!
+## Get the code!
 ```
-git clone (url_of_your_forked_repo)
-cd cornellfencingv4
-git remote rename origin my-fork
+# Download code from github
+git clone https://github.com/cornellfencing/cornellfencing.github.io
+# Go to the new project directory
+cd cornellfencing.github.io/
 ```
 
-#### Add an upstream remote!
-```
-git remote add origin https://github.com/fortynachos/cornellfencingv4
-```
-
-#### Confirm!
-```
-git pull origin master
-```
-^^ This should return a message saying your changes are up to date.
-
-## Making edits
-The page is actually pretty straightforward.
-
-#### Seeing Your Changes
-We use Node.js to run a local dev server. [Install Node.js from the official website.](https://nodejs.org/en/) Get version 7.x.
+## Editing
+### Seeing Your Changes
+We use Node.js to run a local dev server. [Install Node.js from the official website.](https://nodejs.org/en/) Get the LTS version.
 
 In the directory for this project:
 
 ```
-# Install the dependencies
+# Install the dependencies (only need to do this the first time you run)
 npm install
 
 # Launch the server
@@ -53,42 +35,61 @@ npm start
 serving "app" at http://0.0.0.0:8080
 ```  
 
-Go to the URL listed in the output (`http://0.0.0.0:8080` in the example above) to see your page. Hit "refresh" when you make any changes to the files on disk.
+# If npm start returns an error it is likely due to an older version of npm, try running:
+```
+# (Update) the dependencies
+npm update
+```
 
-#### Making text edits
-Most, if not all text changes can be made in the `app/index.html` file.  Nothing complicated here, just find the relevant HTML tags and change away.
+Once npm is successfully running use a web browser to go to the URL listed in the output (`http://0.0.0.0:8080` in the example above) to see your page. Hit "refresh" whenever you make any changes to the files on disk.
 
-#### Styling Changes
-Looking to change the CSS?  All CSS overrides beyond the defaults should be made in `app/css/layouts.css`.  The other CSS files shouldn't need to be touched unless you very explicitly know what you're doing.
+### Styling Changes
+All CSS overrides beyond the defaults should be made in `app/css/layouts.css`.  The other CSS files shouldn't need to be touched unless you very explicitly know what you're doing.
 
-#### Adding Images
-Dump all new image assets in the `app/images` directory and source them in index.html.  For something like adding images to the scrolling hero image, add the image URL in the format in `app/css/layouts.css` (under '0. Alumni Hero Banner Images'), and then add the relevant id to the index.html file.  Search "team-2015" if you're looking for an example in that file.  
+### Adding Images
+Dump all new image assets in the `app/images` directory and source them in index.html.  For something like adding images to the scrolling hero image, add the image URL in the format in `app/css/layouts.css` (under `0. Alumni Hero Banner Images`), and then add the relevant id to the index.html file.  Search "team-2015" if you're looking for an example in that file. For splash images try and match the pixel sizes of the ones already being used and crop the images or add a black bar to their tops so that the links at the top are visible.
 
-#### JS changes
+### JS changes
 This page uses a lot of out-of-the-box js libraries that I didn't really make any effort to change.  Nearly of the javascript-based behavior of the page is powered by [Foundation Zurb](https://foundation.zurb.com), and secondarily supported by jquery.  If you're looking to change the JS on your own, no groundwork has really been laid out for you, so please follow general best practices and try not to make a mess.
 
-## Commit / Push
+## Submitting changes
+First, check your commits with diff and status:
 ```
-git pull origin master
-git commit -m "Your commit message"
-git push my-fork your_branch
+git diff
+git status
 ```
 
-Once you've done that, make a pull request to the fortynachos/cornellfencingv4 repo for review.
+Next, if you have any new untracked files use git add to add them, for example:
+```
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	app/images/MyNewImage.jpg
+    git add app/images/MyNewImage.jpg 
+```
+
+Then, submit your changes for review:
+```
+git checkout -b your-name/feature-name
+git commit -am "Your commit message"
+git push -u origin your-name/feature-name
+```
+
+Once you've done that, go to the [New Pull Request](https://github.com/cornellfencing/cornellfencing.github.io/compare/dev...cornellfencing:dev) page. Change the `compare` branch to be the branch you pushed above.
 
 ## Deploying
-First, ensure that the git remote `origin` refers to the fortynachos/cornellfencingv4 repo:
+First, ensure that the git remote `origin` refers to the cornellfencing/cornellfencing.github.io repo:
 
 ```
 $ git remote -v | grep origin
-origin	git@github.com:fortynachos/cornellfencingv4.git (fetch)
-origin	git@github.com:fortynachos/cornellfencingv4.git (push)
+origin	git@github.com:cornellfencing/cornellfencing.github.io.git (fetch)
+origin	git@github.com:cornellfencing/cornellfencing.github.io.git (push)
 ```
 
 If that didn't look right, use:
 
 ```
-$ git remote set-url origin git@github.com:fortynachos/cornellfencingv4.git
+$ git remote set-url origin git@github.com:cornellfencing/cornellfencing.github.io.git
 ```
 
 After that's done, you're ready to deploy:
